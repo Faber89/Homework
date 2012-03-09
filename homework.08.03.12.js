@@ -23,6 +23,11 @@ Point.prototype.getDistance = function (p2){
 	return distance;	
 };
 
+Point.prototype.translate = function(dx,dy) {
+	this.setY(this.getY() + dy);
+	this.setX(this.getX() + dx);
+};
+
 function Triangle(vert1, vert2, vert3) {
 
 	var vertex1 = vert1;
