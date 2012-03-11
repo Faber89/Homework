@@ -1,3 +1,6 @@
+
+/* POINT */
+
 function Point(x,y) {
 
 	var x;
@@ -21,7 +24,9 @@ Point.prototype.getDistance = function (p2){
 	var distance = Math.sqrt(Math.pow(ascissa,2) + Math.pow(ordinata,2));
 
 	return distance;	
-};
+}
+
+/* TRIANGLE */
 
 Point.prototype.translate = function(dx,dy) {
 	this.setY(this.getY() + dy);
